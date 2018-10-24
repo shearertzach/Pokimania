@@ -12,9 +12,12 @@
 		69FBAA172180B51A00CDA107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FBAA152180B51A00CDA107 /* Main.storyboard */; };
 		69FBAA192180B51A00CDA107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FBAA182180B51A00CDA107 /* Assets.xcassets */; };
 		69FBAA1C2180B51A00CDA107 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FBAA1A2180B51A00CDA107 /* LaunchScreen.storyboard */; };
+		93B84909CE1B6FF4E9C84197 /* Pods_pokemania.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8140F1E25B1AFAC587A11E01 /* Pods_pokemania.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2332A71913952AE269FE1556 /* Pods-pokemania.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokemania.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokemania/Pods-pokemania.release.xcconfig"; sourceTree = "<group>"; };
+		41B932EC75DACBC179774514 /* Pods-pokemania.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokemania.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokemania/Pods-pokemania.debug.xcconfig"; sourceTree = "<group>"; };
 		69FBAA0E2180B51A00CDA107 /* pokemania.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokemania.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FBAA112180B51A00CDA107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69FBAA132180B51A00CDA107 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		69FBAA182180B51A00CDA107 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69FBAA1B2180B51A00CDA107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69FBAA1D2180B51A00CDA107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8140F1E25B1AFAC587A11E01 /* Pods_pokemania.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokemania.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B84909CE1B6FF4E9C84197 /* Pods_pokemania.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				69FBAA102180B51A00CDA107 /* pokemania */,
 				69FBAA0F2180B51A00CDA107 /* Products */,
+				B400A744779D3E607B249863 /* Pods */,
+				AAD9956EECB8BFFC214387F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = pokemania;
 			sourceTree = "<group>";
 		};
+		AAD9956EECB8BFFC214387F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8140F1E25B1AFAC587A11E01 /* Pods_pokemania.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B400A744779D3E607B249863 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41B932EC75DACBC179774514 /* Pods-pokemania.debug.xcconfig */,
+				2332A71913952AE269FE1556 /* Pods-pokemania.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69FBAA202180B51A00CDA107 /* Build configuration list for PBXNativeTarget "pokemania" */;
 			buildPhases = (
+				E3A1A22A3362A5B5AC059EA4 /* [CP] Check Pods Manifest.lock */,
 				69FBAA0A2180B51A00CDA107 /* Sources */,
 				69FBAA0B2180B51A00CDA107 /* Frameworks */,
 				69FBAA0C2180B51A00CDA107 /* Resources */,
+				01CDF40A1E908C464CC3B7BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01CDF40A1E908C464CC3B7BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-pokemania/Pods-pokemania-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pokemania/Pods-pokemania-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3A1A22A3362A5B5AC059EA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pokemania-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		69FBAA0A2180B51A00CDA107 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		69FBAA212180B51A00CDA107 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B932EC75DACBC179774514 /* Pods-pokemania.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +367,7 @@
 		};
 		69FBAA222180B51A00CDA107 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2332A71913952AE269FE1556 /* Pods-pokemania.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
